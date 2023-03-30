@@ -16,7 +16,7 @@ title: Schedule
   {% if unit == "1" %} 
       {% assign start = 0 %}
       {% assign end = 3 %}
-## Unit {{unit}}: Introduction to Tools and Resources
+## Unit {{unit}}: Introduction to Tools and Resources jiyajiya
 > The initial weeks focus on introducing Tools, Pair Programming, and the AP Resources that we plan to use throughout the year. At the end of Weeks 0-3, students will be exposed to blogging with GitHub Pages; developing with Jupyter Notebooks, Python, JavaScript, HTML, and Code.org AppLab; working with AP classroom and becoming familiar with Create Performance Task project requirements.
   {% elsif unit == "2" %} 
       {% assign start = 4 %}
