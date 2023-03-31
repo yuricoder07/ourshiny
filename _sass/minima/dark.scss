@@ -1,94 +1,116 @@
+$primary-color: #ff8c00; // bright yellow/orange
+$secondary-color: #f7d488; // lighter shade of primary color
+$accent-color: #f9c54d; // darker shade of primary color
+
 $high-emph: rgba(white, 0.87);
-$med-emph: rgba(white, 0.69); //Noicee
+$med-emph: rgba(white, 0.69);
 $low-emph: rgba(white, 0.38);
-$dark-grey : #121212; 
+$dark-grey: #121212;
 $clear: clear;
-// $dark-grey : #1F1B24;
 $overlay: mix($dark-grey, white, 95%);
 $overlay-light: mix($dark-grey, white, 86%);
 
 html, body, input, textarea, select, button {   
   color: $high-emph !important;
   background-color: $dark-grey !important;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 a {
-    color: rgb(75, 186, 255) !important;
+  color: $primary-color !important;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 a:hover {
-    color:$high-emph !important;
+  color: $accent-color !important;
 }
 
 .site-title, .site-title:visited, .site-nav, .page-link {
-    color: $high-emph !important;
+  color: $high-emph !important;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: bold;
 }
 
 .site-nav {
-    background-color: $clear;
-    border-color: $overlay-light;
+  background-color: $clear;
+  border-color: $overlay-light;
 }
 
 * {
-    scrollbar-color: $dark-grey $overlay-light;
+  scrollbar-color: $dark-grey $overlay-light;
 }
 
 pre, code {
-    // BVas a lighter colour to better highlight short code words
-    border-color: $overlay-light;
-    background-color: $overlay;
+  border-color: $overlay-light;
+  background-color: $overlay;
 }
 
 .page-description {
-    color: $med-emph;
+  color: $med-emph;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: bold;
 }
 
 .post-meta {
-    color: $low-emph;
+  color: $low-emph;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
 }
 
 .post-content p, .post-content li {
-    color: $med-emph;
-    font-size: 18px;
+  color: $med-emph;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
 }
 
 .btn {
-    background-color: $overlay !important;
-    color: $high-emph !important;
-    border-color: $overlay-light !important;
+  background-color: $primary-color !important;
+  color: $high-emph !important;
+  border-color: $secondary-color !important;
+  font-weight: bold;
 }
 
 .btn:hover {
-    background-color: $dark-grey !important;
+  background-color: $accent-color !important;
 }
 
 table th{
-    background-color: $overlay;
-    border-color: $overlay-light;
-    color: $high-emph;
+  background-color: $primary-color;
+  border-color: $secondary-color;
+  color: $high-emph;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 table td{
-    background-color: $dark-grey;
-    border-color: $overlay-light;
-    color: $med-emph;
+  background-color: $dark-grey;
+  border-color: $overlay-light;
+  color: $med-emph;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
 }
 
 .flash {
-    color: $dark-grey !important;
-    filter: brightness(80%);
+  color: $dark-grey !important;
+  filter: brightness(80%);
 }
 
 canvas {
-    filter: invert(100%);
+  filter: invert(100%);
 }
 
 .post-list > li > div {
-    box-shadow: none !important;
-    background-color: $overlay;
-    border: none !important;
+  box-shadow: none !important;
+  background-color: $overlay;
+  border: none !important;
 }
 
 li .post-meta-description {
-    color: $med-emph !important;
+  color: $med-emph !important;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
 }
