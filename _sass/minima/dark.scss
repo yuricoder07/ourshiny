@@ -1,6 +1,6 @@
-$primary-color: #ff8c00; // bright yellow/orange
-$secondary-color: #f7d488; // lighter shade of primary color
-$accent-color: #f9c54d; // darker shade of primary color
+$primary-color: #47cf77; // bright yellow/orange
+$secondary-color: #68ff9d; // lighter shade of primary color
+$accent-color: #ffe44d; // darker shade of primary color
 
 $high-emph: rgba(white, 0.87);
 $med-emph: rgba(white, 0.69);
@@ -10,13 +10,39 @@ $clear: clear;
 $overlay: mix($dark-grey, white, 95%);
 $overlay-light: mix($dark-grey, white, 86%);
 
-html, body, input, textarea, select, button {   
+html, input, textarea, select {   
   color: $high-emph !important;
   background-color: $dark-grey !important;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   line-height: 1.5;
 }
+
+body {
+  color: $high-emph !important;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  --bg-color: rgb(0, 39, 18) !important;
+  --bg-color-light: #007a39; 
+  background: linear-gradient(-45deg, var(--bg-color), var(--bg-color-light), var(--bg-color), var(--bg-color-light));
+  background-size: 600% 600% !important;
+  animation: gradient 15s ease infinite !important;
+  height: 100%;
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
 
 a {
   color: $primary-color !important;
@@ -78,20 +104,20 @@ pre, code {
 }
 
 table th{
-  background-color: $primary-color;
   border-color: $secondary-color;
   color: $high-emph;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: bold;
+  background-color: $primary-color;
 }
 
 table td{
-  background-color: $dark-grey;
   border-color: $overlay-light;
   color: $med-emph;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
+  background-color: $dark-grey;
 }
 
 .flash {
@@ -104,9 +130,7 @@ canvas {
 }
 
 .post-list > li > div {
-  box-shadow: none !important;
   background-color: $overlay;
-  border: none !important;
 }
 
 li .post-meta-description {
