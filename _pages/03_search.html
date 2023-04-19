@@ -9,6 +9,15 @@ search_exclude: true
 <script type="text/javascript" src="{{ '/assets/js/search.js' | relative_url }}"></script>
 <script type="text/javascript" src="{{ '/assets/js/vendor/lunr.min.js' | relative_url }}"></script>
 
+<style>
+
+    header {
+        background-color: #181818;
+    }  
+    
+  </style>
+
+
 <div class="search">
     <div class="search-input-wrap">
     <input type="text" class="js-search-input search-input input-block form-control" tabindex="0" placeholder="Search {{ site.title }}" aria-label="Search {{ site.title }}" autocomplete="off">
@@ -16,3 +25,7 @@ search_exclude: true
     <br>
     <div class="js-search-results search-results-wrap"></div>
 </div>
+
+<audio id="myAudio" autoplay loop>
+  <source src="{{site.baseurl}}//audios/ebyt.mp3" type="audio/mpeg">
+</audio>

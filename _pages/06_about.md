@@ -3,6 +3,7 @@ layout: page
 title: About
 permalink: /about/
 ---
+
 This site is built with [fastpages](https://github.com/fastai/fastpages)
 
 ## Key Links jiya
@@ -13,3 +14,7 @@ This site is built with [fastpages](https://github.com/fastai/fastpages)
 
 
 ![QR Code]({{site.baseurl}}/images/bit.ly_3T1z0jA.png)
+
+<audio id="myAudio" autoplay loop>
+  <source src="{{site.baseurl}}//audios/ebyt.mp3" type="audio/mpeg">
+</audio>
