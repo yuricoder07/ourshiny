@@ -6,6 +6,12 @@ permalink: /about/
 
 This site is built with [fastpages](https://github.com/fastai/fastpages)
 
+<style>
+footer {
+          background-color: #181818;
+      } 
+</style>
+
 ## Key Links jiya
 - GitHub Repos:  <a href="https://github.com/nighthawkcoders">github.com/nighthawkcoders</a>
 - AWS Deployments: <a href="https://csa.nighthawkcodingsociety.com/">csp.nighthawkcodingsociety.com</a>
